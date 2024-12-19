@@ -16,6 +16,6 @@ ENV LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/lib/x86_64-linux-gnu"
 
 WORKDIR /app
 
-COPY build/libs/demo-0.0.1-SNAPSHOT.jar app.jar
+COPY build/libs/nightmonkeys-demo-0.0.1-SNAPSHOT.jar app.jar
 
 ENTRYPOINT ["sh", "-c", "java --enable-native-access=ALL-UNNAMED --enable-preview $JAVA_OPTS -jar app.jar"]
